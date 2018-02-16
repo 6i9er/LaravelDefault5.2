@@ -161,6 +161,10 @@ return [
          */
         // Multi Languages
         Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
+        //Debuger Bar
+        Barryvdh\Debugbar\ServiceProvider::class,
+        //HTML minimize
+        "HTMLMin\HTMLMin\HTMLMinServiceProvider",
 
     ],
 
@@ -216,6 +220,10 @@ return [
         'localizationRedirect' => 'Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter',
         'localeSessionRedirect' => 'Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect',
         'localeViewPath' =>'Mcamara\LaravelLocalization\Middleware\LaravelLocalizationViewPath',
+        //Debuger Bar
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        //Html Minimize
+        'HTMLMin' => HTMLMin\HTMLMin\Facades\HTMLMin::class,
     ],
 
 ];

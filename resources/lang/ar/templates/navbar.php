@@ -13,9 +13,9 @@ return [
     |
     */
 
-    "homePage" => "Home" ,
-    "login" => "Login" ,
-    "signup" => "Signup" ,
+    "homePage" => "الرئيسيه" ,
+    "login" => "تسجيل دخول" ,
+    "signup" => "تسجيل" ,
     "" => "" ,
     "" => "" ,
     "" => "" ,

@@ -39,8 +39,13 @@ Route::group(
             return Redirect::to("/",301);
         }
     });
+
+        Route::auth();
+
+        Route::get('/home', 'HomeController@index');
 });
 
 function test(){
     echo "aaaaaaaA";
 }
+
