@@ -15,18 +15,18 @@ use \Illuminate\Support\Facades\Redirect;
 use Illuminate\Http\Request;
 
 //Route::group(['prefix' => LaravelLocalization::setLocale()], function() {
-Route::group(
-    [
-        'prefix' => LaravelLocalization::setLocale(),
-        'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
-    ],
-    function()
-    {
+    Route::group(
+        [
+            'prefix' => LaravelLocalization::setLocale(),
+            'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]
+        ],
+        function()
+        {
         Route::resource('home',"WelcomeController");
     Route::get('/', function () {
 
-        return url('')."/  ".trans('messages.welcome');
-//        return view('welcome');
+//        return url('')."/  ".trans('messages.welcome');
+        return view('welcome');
     });
 
     Route::get('/language/{lang}', function (Request $request) {
@@ -42,10 +42,8 @@ Route::group(
 
         Route::auth();
 
-        Route::get('/home', 'HomeController@index');
+//        Route::get('/home', 'HomeController@index');
 });
 
-function test(){
-    echo "aaaaaaaA";
-}
+
 

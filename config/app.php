@@ -159,10 +159,11 @@ return [
         /*
          * Installed Packages
          */
-        // Multi Languages
-        Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
         //Debuger Bar
         Barryvdh\Debugbar\ServiceProvider::class,
+        // Multi Languages
+        Mcamara\LaravelLocalization\LaravelLocalizationServiceProvider::class,
+
         //HTML minimize
         "HTMLMin\HTMLMin\HTMLMinServiceProvider",
 
