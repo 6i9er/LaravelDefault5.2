@@ -13,5 +13,6 @@ return [
     |
     */
 
-    'welcome' => 'Welcome',
+    'thisPageNotFoud' => 'This page not found',
+    'We can\'t seem to find the page you\'re looking for.' => 'We can\'t seem to find the page you\'re looking for.',
 ];
