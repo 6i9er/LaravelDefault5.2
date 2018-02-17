@@ -29,16 +29,7 @@ use Illuminate\Http\Request;
         return view('welcome');
     });
 
-    Route::get('/language/{lang}', function (Request $request) {
-        $locale = $request->lang;
-        $languageArr = array("ar","en");
-        if(in_array($locale , $languageArr)){
-            App::setLocale($locale);
-            return Redirect::to("/".$locale."/",301);
-        }else{
-            return Redirect::to("/",301);
-        }
-    });
+    Route::get('/language/{lang}', 'SiteSettingController@getChangelanguage');
 
         Route::auth();
 

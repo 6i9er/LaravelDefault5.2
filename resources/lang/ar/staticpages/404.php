@@ -13,14 +13,5 @@ return [
     |
     */
 
-    "homePage" => "Home" ,
-    "login" => "Login" ,
-    "signup" => "Signup" ,
-    "Languages" => "Languages" ,
-    "logout" => "Logout" ,
-    "arabic" => "Arabic" ,
-    "english" => "English" ,
-    "" => "" ,
-    "" => "" ,
-
+    'welcome' => 'Welcome',
 ];

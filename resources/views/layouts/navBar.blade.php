@@ -39,6 +39,18 @@
                         </ul>
                     </li>
                 @endif
+
+                <!-- Languages  -->
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                        {{ trans('templates/navbar.Languages') }}<span class="caret"></span>
+                    </a>
+
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="{{ getUrlPath('language/ar') }}"><i class="fa fa-btn fa-exchange"></i>{{ trans('templates/navbar.arabic') }}</a></li>
+                        <li><a href="{{ getUrlPath('language/en') }}"><i class="fa fa-btn fa-exchange"></i>{{ trans('templates/navbar.english') }}</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </div>

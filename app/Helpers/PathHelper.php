@@ -1,7 +1,7 @@
 <?php
 
 function getUrlPath($urlPath){
-    echo url(''). "/" . App::getLocale() . "/" .$urlPath;
+    return url(''). "/" . App::getLocale() . "/" .$urlPath;
 }
 
 function getPageNameForTitle($hasParameter = '0' , $titleName = ''){
