@@ -16,5 +16,5 @@ return array(
     'f0906e6318348a765ffb6eb24e0d0938' => $vendorDir . '/laravel/framework/src/Illuminate/Foundation/helpers.php',
     '58571171fd5812e6e447dce228f52f4d' => $vendorDir . '/laravel/framework/src/Illuminate/Support/helpers.php',
     '4a1f389d6ce373bda9e57857d3b61c84' => $vendorDir . '/barryvdh/laravel-debugbar/src/helpers.php',
-    '5442e186e2251152c36021e866bc663a' => $baseDir . '/app/Helpers/LangHelper.php',
+    '519a7788a2e272693b8a2e58f8710eba' => $baseDir . '/app/Helpers/PathHelper.php',
 );
