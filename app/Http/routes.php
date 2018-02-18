@@ -26,13 +26,25 @@ use Illuminate\Http\Request;
     Route::get('/', function () {
 
 //        return url('')."/  ".trans('messages.welcome');
-        return view('welcome');
+        return view('welcome')->with("users" , \App\User::all());
     });
 
     Route::get('/language/{lang}', 'SiteSettingController@getChangelanguage');
 
         Route::auth();
 
+
+        // fixing
+
+            Route::get('/_debugbar/assets/stylesheets', [
+                'as' => 'debugbar-css',
+                'uses' => '\Barryvdh\Debugbar\Controllers\AssetController@css'
+            ]);
+
+            Route::get('/_debugbar/assets/javascript', [
+                'as' => 'debugbar-js',
+                'uses' => '\Barryvdh\Debugbar\Controllers\AssetController@js'
+            ]);
 //        Route::get('/home', 'HomeController@index');
 });
 
