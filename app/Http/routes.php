@@ -26,7 +26,7 @@ use Illuminate\Http\Request;
     Route::get('/', function () {
 
 //        return url('')."/  ".trans('messages.welcome');
-        return view('welcome')->with("users" , \App\User::all());
+        return view('welcome')->with("users" , \App\Models\User::all());
     });
 
     Route::get('/language/{lang}', 'SiteSettingController@getChangelanguage');

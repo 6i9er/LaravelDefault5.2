@@ -29,8 +29,14 @@ class SiteSettingController extends Controller
                 $oldUrl =  getUrlPath(str_replace("/" , "" , explode( url($oldLocale), url()->previous() ) )[1]);
                 App::setLocale($locale);
                 $oldUrl = str_replace("/".$oldLocale , "/".$locale ,$oldUrl  );
-                return Redirect::to($oldUrl ,301);
+//                return ;
+                if(substr($oldUrl,-1) == "/"){
+                    return Redirect::to(substr($oldUrl, 0, -1) ,301);
+                }else{
+                    return Redirect::to($oldUrl ,301);
+                }
             }else{
+//                return url()->previous();
                 return Redirect::to(url()->previous(),301);
             }
 //            return $oldUrl;
